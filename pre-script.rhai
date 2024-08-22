@@ -22,11 +22,21 @@ let targets = #{
     nrf52840: #{
         arch: "arm",
         rust_target: "thumbv7em-none-eabihf",
-        probe_chip: "nRF52840_xxAA",
+        probe_chip: "",
 	flash_start: "0x00000000",
         flash_size: "1024K",
         ram_start: "0x20000000",
         ram_size: "256K"
+    },
+
+    stm32f411: #{
+        arch: "arm",
+        rust_target: "thumbv7em-none-eabihf",
+        probe_chip: "STM32F411CEUx",
+	    flash_start: "0x00000000",
+        flash_size: "512K",
+        ram_start: "0x20000000",
+        ram_size: "128K"
     },
 
     stm32h743zi: #{
